@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  /* Paleta de cores */
+  --white: #EBEBEB;
+  --beige: #EEd8A5;
+  --light-orange: #E8A609;
+  --orange: #FF9003;
+  --dark-orange: #F55B02;
+  --brown: #5c3529;
+  --black: #1B1B1B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: var(--light-orange);
+  background-color: #FFA631;
+  height: 174px;
+}
+
+.container, .menu, nav, .logo {
+  display: flex;
+}
+
+.container {
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  min-width: 350px;
+}
+
+nav ul, nav li, nav a, .buttons {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--brown);
+  font-size: 16px;
+  border: none;
+  transition: all ease 1s;
+  font-weight: bold;
+  text-shadow: #1b1b1b17 1px 1px;
+  white-space: nowrap;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+nav a:hover, nav .active {
+  color: var(--white);
+  text-shadow: #1b1b1b21 1px 1px;
+  background-color: var(--dark-orange);
+  box-shadow: #4a291f11 1px 1px;
+}
+
+.buttons {
+  display: flex;
+  font-weight: bold;
+  padding: 12px 0;
+}
+
+.menu {
+  align-items: center;
+}
+
+.primary-button, .secundary-button {
+  padding: 10px 15px;
+  font-size: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.primary-button {
+  text-shadow: #1b1b1b2a 1px 1px;
+   padding-left: 24px;
+   padding-right: 24px;
+   background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%);
+   border: none;
+   text-align: center;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 25px;
+   display: block;
+   box-shadow: #4a291f11 1px 1px;
+   white-space: nowrap;
+ }
+
+ .secundary-button {
+   text-shadow: #1b1b1b2a 1px 1px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: none;
+  border: var(--white) 2px solid;
+  text-align: center;
+  transition: 1s;
+  background-size: 200% auto;
+  color: var(--white);            
+  border-radius: 25px;
+  display: block;
+  box-shadow: #4a291f11 1px 1px;
+ }
+
+ .primary-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.secundary-button:hover {
+  background-color: #30303033;
+  
+}
+
+.logo {
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.imagelogo {
+  max-width: 250px;
+}
+
+.menuMobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin: 40px 20px 40px 0px;
+}
+
+.mm-line {
+  height: 3px;
+  background-color: var(--brown);
+}
+
+.wrap {
+  width: 100%;
+  min-width: 390px;
+  max-height: 450px;
+  position: relative;
+}
+
+.wrap > .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+  width: 100%;
+  max-height: 580px;
+  overflow: hidden; 
+  background-color: #F55B02;
+}
+
+.wrap > .bg-video > video {
+  width: 100%;
+  opacity: 0.45;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: var(--white);
+  text-shadow: #1b1b1b9c 1px 1px;
+  text-align: center;
+}
+
+.text h2 {
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+.text .primary-button {
+  margin-top: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.767);
+  font-weight: light;
+  padding-top: 10px;
+  background-color: #1B1B1B;
+  height: 40px;
+}
+
+@media (max-width: 1050px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .wrap > .bg-video > video {
+    width: 200%;
+    opacity: 0.45;
+  }
+  
+}
+
+@media (max-width: 765px) {
+  header {
+    height: 230px;
+  }
+
+  
+}
+
+
+@media (max-width: 470px) {
+  header {
+    height: 180px;
+  }
+
+  .wrap > .bg-video > video {
+    width: 250%;
+    opacity: 0.45;
+  }
+  
+  nav a {
+    display: block;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  nav ul {
+    margin-top: 120px;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .menu {
+    height: 60px;
+    margin-left: 10px;
+  }
+
+  .menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

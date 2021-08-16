@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Pet Planet | Página inicial</title>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                    document.querySelector("#wave").style.display = 'flex';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                    document.querySelector("#wave").style.display = 'none';
+                }
+            });
+        };
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img class="imagelogo" src="images/pet-planet.png" alt="Logo"></a>
+            </div>
+
+            <div class="menu">
+                <div class="menuMobile">
+                    <div class="mm-line"></div>
+                    <div class="mm-line"></div>
+                    <div class="mm-line"></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="02-quem-somos.html" class="active">Quem somos</a></li>
+                        <li><a href="03-nossos-servicos.html">Nossos serviços</a></li>
+                        <li><a href="04-fale-conosco.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="buttons">
+                <a href="05-login.html" class="secundary-button">Login</a>
+                <a href="06-cadastro.html" class="primary-button">Registre-se</a>
+            </div>
+
+        </div>
+        <div class="waves">
+            <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 15 1300 300" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="1" y1="1" y2="-1"><stop stop-color="#ffa32b" offset="0%"></stop><stop stop-color="#ffffff" offset="70%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,224L60,197.3C120,171,240,117,360,122.7C480,128,600,192,720,218.7C840,245,960,235,1080,192C1200,149,1320,75,1440,69.3C1560,64,1680,128,1800,170.7C1920,213,2040,235,2160,229.3C2280,224,2400,192,2520,186.7C2640,181,2760,203,2880,176C3000,149,3120,75,3240,53.3C3360,32,3480,64,3600,64C3720,64,3840,32,3960,48C4080,64,4200,128,4320,149.3C4440,171,4560,149,4680,149.3C4800,149,4920,171,5040,170.7C5160,171,5280,149,5400,128C5520,107,5640,85,5760,106.7C5880,128,6000,192,6120,186.7C6240,181,6360,107,6480,80C6600,53,6720,75,6840,74.7C6960,75,7080,53,7200,74.7C7320,96,7440,160,7560,170.7C7680,181,7800,139,7920,101.3C8040,64,8160,32,8280,48C8400,64,8520,128,8580,160L8640,192L8640,320L8580,320C8520,320,8400,320,8280,320C8160,320,8040,320,7920,320C7800,320,7680,320,7560,320C7440,320,7320,320,7200,320C7080,320,6960,320,6840,320C6720,320,6600,320,6480,320C6360,320,6240,320,6120,320C6000,320,5880,320,5760,320C5640,320,5520,320,5400,320C5280,320,5160,320,5040,320C4920,320,4800,320,4680,320C4560,320,4440,320,4320,320C4200,320,4080,320,3960,320C3840,320,3720,320,3600,320C3480,320,3360,320,3240,320C3120,320,3000,320,2880,320C2760,320,2640,320,2520,320C2400,320,2280,320,2160,320C2040,320,1920,320,1800,320C1680,320,1560,320,1440,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </div>
+    </header>
+    
+    <main>
+
+    </main>
+
+</body>
+</html>
