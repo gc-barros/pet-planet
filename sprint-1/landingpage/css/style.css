@@ -153,6 +153,23 @@ nav a:hover, nav .active {
   background-color: var(--brown);
 }
 
+.imagem-central {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.imagem-central img {
+  border: var(--dark-orange) solid 6px;
+  margin: auto;
+  border-radius: 100%;
+  max-width: 220px;
+  height: 220px;
+  object-fit: cover;
+  box-shadow: #1b1b1b75 1px 1px;
+}
+
 .wrap {
   width: 100%;
   min-width: 390px;
@@ -190,7 +207,7 @@ nav a:hover, nav .active {
 }
 
 .text.home {
-  padding-top: 200px;
+  padding-top: 220px;
 }
 
 .text h2 {
