@@ -122,7 +122,7 @@ nav a:hover, nav .active {
  }
 
  .primary-button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; 
   color: #fff;
   text-decoration: none;
 }
@@ -260,7 +260,9 @@ nav a:hover, nav .active {
 }
 
 .text .primary-button {
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 17px;
+  padding: 10px 24px;
 }
 
 .text ul {
@@ -284,7 +286,7 @@ nav a:hover, nav .active {
   flex-direction: column;
 }
 
-.wrapper .button{
+.wrapper .button {
   display: inline-block;
   height: 42px;
   width: 42px;
@@ -296,10 +298,10 @@ nav a:hover, nav .active {
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: all 0.3s ease-out;
 }
-.wrapper .button:hover{
+.wrapper .button:hover {
   width: 200px;
 }
-.wrapper .button .icon{
+.wrapper .button .icon {
   color: #fff;
   display: inline-block;
   height: 42px;
@@ -349,7 +351,7 @@ nav a:hover, nav .active {
   color: #dadada;
 }
 
-.wrapper .button span{
+.wrapper .button span {
   margin-left: 0;
   color: #dadada;
   font-size: 16px;
@@ -357,7 +359,6 @@ nav a:hover, nav .active {
   line-height: 42px;
   transition: all 0.3s ease-out;
 }
-
 
 footer {
   position: fixed;
@@ -452,4 +453,46 @@ footer {
     top: 165px;
   }
 
+  .text h2 {
+    padding: 0 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    max-width: 600px;
+    text-align: justify;
+    font-size: 16px;
+  }
+  
+  .text li {
+    font-size: 14px;
+  }
+  .text h1 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    max-width: 800px;
+  }
+
+  .contato {
+    padding-bottom: 50px;
+  }
+
+  .wrapper .button span, 
+  .wrapper .button .icon i, 
+  .wrapper .button .icon, 
+  .wrapper .button {
+    font-size: 12px;
+    height: 34px;
+    line-height: 34px;
+  }
+
+  .text h2 {
+    margin-bottom: 0;
+  }
+
+  .text ul, .text .primary-button {
+    margin-top: 20px;
+  }
+
+  
 }
