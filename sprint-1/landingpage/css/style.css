@@ -210,6 +210,10 @@ nav a:hover, nav .active {
   padding-top: 220px;
 }
 
+.text.fconosco {
+  padding-bottom: 15px;
+}
+
 .text h2 {
   padding: 0 10px;
   margin-top: 15px;
@@ -224,7 +228,6 @@ nav a:hover, nav .active {
   margin-bottom: 5px;
   max-width: 800px;
 }
-
 
 .text .primary-button {
   margin-top: 20px;
@@ -242,6 +245,89 @@ nav a:hover, nav .active {
   font-size: 18px;
   padding-bottom: 5px;
 }
+
+.contato {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #f83600;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  color: #fff;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon, 
+.wrapper .button:nth-child(1):hover {
+  background: #e70505;
+}
+
+.wrapper .button:nth-child(2):hover .icon,
+.wrapper .button:nth-child(2):hover {
+  background: #b205e7;
+}
+
+.wrapper .button:nth-child(3):hover .icon,
+.wrapper .button:nth-child(3):hover {
+  background: #0554e7;
+}
+
+.wrapper .button:nth-child(4):hover .icon,
+.wrapper .button:nth-child(4):hover {
+  background: #e70589;
+}
+
+.wrapper .button:nth-child(5):hover .icon,
+.wrapper .button:nth-child(5):hover {
+  background: #01a109;
+}
+
+.wrapper .button:nth-child(6):hover .icon,
+.wrapper .button:nth-child(6):hover {
+  background: #05a7e7;
+}
+
+.wrapper .button .icon i{
+  font-size: 22px;
+  line-height: 50px;
+  transition: all 0.2s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #dadada;
+}
+
+.wrapper .button span{
+  margin-left: 0;
+  color: #dadada;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+  transition: all 0.3s ease-out;
+}
+
 
 footer {
   position: fixed;
@@ -316,4 +402,13 @@ footer {
     flex-direction: column;
     justify-content: space-around;
   }
+
+  .wrapper .button {
+    display: flex;
+    flex-flow: column wrap;
+    width: 200px;
+    align-content: flex-start;
+    margin: 10px 10px;
+  }
+
 }
