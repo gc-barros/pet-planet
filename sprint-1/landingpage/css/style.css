@@ -153,21 +153,51 @@ nav a:hover, nav .active {
   background-color: var(--brown);
 }
 
-.imagem-central {
+.imagem-central, .logo-central {
   position: absolute;
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
+.logo-central {
+  top: 130px;
+}
+
+.logo-central img {
+  width: 130px;
+  animation-name: rotation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  0%   {transform: rotate(0deg);}
+  25%  {transform: rotate(10deg);}
+  50%  {transform: rotate(0deg);}
+  75%  {transform: rotate(-10deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes border-color {
+  0%   {border: #f83600 solid 8px;}
+  25%  {border: #f87800 solid 8px;}
+  50%  {border: #ffffff solid 8px;}
+  75%  {border: #f87800 solid 8px;}
+  100% {border: #f83600 solid 8px;}
+}
+
 .imagem-central img {
-  border: var(--dark-orange) solid 6px;
+  border: var(--dark-orange) solid 10px ;
   margin: auto;
   border-radius: 100%;
   max-width: 220px;
   height: 220px;
   object-fit: cover;
   box-shadow: #1b1b1b75 1px 1px;
+  animation-name: border-color;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 .wrap {
@@ -256,8 +286,8 @@ nav a:hover, nav .active {
 
 .wrapper .button{
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 42px;
+  width: 42px;
   margin: 0 5px;
   overflow: hidden;
   background: #f83600;
@@ -272,8 +302,8 @@ nav a:hover, nav .active {
 .wrapper .button .icon{
   color: #fff;
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 42px;
+  width: 42px;
   text-align: center;
   border-radius: 50px;
   box-sizing: border-box;
@@ -311,8 +341,8 @@ nav a:hover, nav .active {
 }
 
 .wrapper .button .icon i{
-  font-size: 22px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 42px;
   transition: all 0.2s ease-out;
 }
 .wrapper .button:hover .icon i{
@@ -324,7 +354,7 @@ nav a:hover, nav .active {
   color: #dadada;
   font-size: 16px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 42px;
   transition: all 0.3s ease-out;
 }
 
@@ -351,6 +381,10 @@ footer {
     width: 200%;
     opacity: 0.45;
   }
+
+  .logo-central {
+    top: 165px;
+  }
   
 }
 
@@ -359,6 +393,9 @@ footer {
     height: 230px;
   }
 
+  .logo-central {
+    top: 210px;
+  }
   
 }
 
@@ -409,6 +446,10 @@ footer {
     width: 200px;
     align-content: flex-start;
     margin: 10px 10px;
+  }
+
+  .logo-central {
+    top: 165px;
   }
 
 }
