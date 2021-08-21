@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-forms.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Pet Planet | Login</title>
 
@@ -44,8 +44,46 @@
     </header>
     
     <main>
+        <h1>Olá, é um prazer revê-lo!</h1>
 
+        <div class="pic-user">
+            <img src="images/dog-login.jpg" alt="">
+        </div>
+
+        <form autocomplete="off">
+            <h2>Fazer login</h2>
+
+            <div class="input-wrp">
+                <input type="text" id="email" class="wrp-campo" required>
+                <span class="floating-label"> Digite seu e-mail</span>
+                <img src="images/mail-line.svg" alt="">
+            </div>
+
+            <div class="input-wrp">
+                <input type="password" id="senha" class="wrp-campo" required>
+                <span class="floating-label"> Digite sua senha</span>
+                <img src="images/lock-password-line.svg" alt=""> 
+            </div>
+
+            <div class="block-pass">
+                <div class="remember-pass">
+                    <input type="checkbox" name="lembrar-me" id="lembrar-me" checked>
+                    <span class="checkmark">Lembrar-me</span>
+                </div>
+                <a href="#" class="pass-recover">Esqueci minha senha</a>
+            </div>
+            
+            <button type="submit" class="primary-button">Entrar</button>
+
+            <div class="block-pass bottom">Ainda não é nosso cliente?<a href="#" class="pass-recover">Cadastre-se</a></div>
+            
+        </form>
+        
     </main>
+
+    <footer>
+        © Copyright 2021. Todos os direitos reservados.
+    </footer>
 
 </body>
 </html>
