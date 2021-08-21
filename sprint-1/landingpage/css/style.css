@@ -139,6 +139,11 @@ nav a:hover, nav .active {
 
 .imagelogo {
   max-width: 250px;
+  transition: all 1s ease-out;
+}
+
+.imagelogo:hover {
+  transform: rotate(-8deg);
 }
 
 .menuMobile {
