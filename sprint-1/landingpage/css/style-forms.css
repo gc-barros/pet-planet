@@ -236,6 +236,7 @@ form .wrp-campo {
 
 form input:focus {
   outline: none;
+  background-color: #ffffff56;
 }
 
 .input-wrp {
