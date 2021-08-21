@@ -20,9 +20,8 @@
 
 body {
   background: #ffdcc8;  
-  background: -webkit-linear-gradient(to left, #ffbf99, #ffdcc8)); 
+  background: -webkit-linear-gradient(to left, #ffbf99, #ffdcc8); 
   background: linear-gradient(to left, #ffbf99, #ffdcc8); 
-
 }
 
 header {
