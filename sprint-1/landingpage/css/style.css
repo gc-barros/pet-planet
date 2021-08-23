@@ -95,7 +95,6 @@ nav a:hover, nav .active {
    padding-left: 24px;
    padding-right: 24px;
    background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%);
-   border: none;
    text-align: center;
    transition: 0.5s;
    background-size: 200% auto;
@@ -104,6 +103,7 @@ nav a:hover, nav .active {
    display: block;
    box-shadow: #4a291f11 1px 1px;
    white-space: nowrap;
+   border: rgba(236, 0, 0, 0) 2px solid;
  }
 
  .secundary-button {
@@ -207,7 +207,7 @@ nav a:hover, nav .active {
 
 .wrap {
   width: 100%;
-  min-width: 390px;
+  min-width: 360px;
   max-height: 450px;
   position: relative;
 }
@@ -412,7 +412,7 @@ footer {
   }
 
   .wrap > .bg-video > video {
-    width: 250%;
+    width: 275%;
     opacity: 0.45;
   }
   
