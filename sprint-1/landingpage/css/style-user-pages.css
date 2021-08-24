@@ -15,6 +15,7 @@ header {
 body {
     background-color: #ffffff;
     background-image: linear-gradient(-60deg, #ffffff -30%, #dadadab0 100%);
+    overflow-x: hidden;
 }
 
 header .container {
@@ -158,11 +159,51 @@ input[type=search]::-webkit-search-cancel-button {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: #f06d22;
+    background-color: #f0b922;
     top: 0;
     right: -5px;
     border: #ebebeb 2px solid;
     border-radius: 20px;
+}
+
+.user-pic i {
+    position: absolute;
+    top: 20px;
+    right: -25px;
+}
+
+.lateral-menu {
+    position: absolute;
+    right: 0px;
+    background-color: #FAFAFA;
+    width: 200px;
+    height: 340px;
+    padding: 20px 0 10px 30px;
+    font-size: 16px;
+    box-shadow: #75757565 -1px 1px 4px;
+    transition: all 0.5s ease-out;
+    display: none;
+}
+
+.lateral-menu ul {
+    list-style: none;
+}
+
+.lateral-menu ul li > a {
+    text-decoration: none;
+    color: #484848;
+}
+
+.lateral-menu ul li > a:hover {
+    color: #975b00;
+}
+
+.lateral-menu ul li a > i {
+    margin-right: 5px;
+}
+
+.lateral-menu ul li {
+    margin-bottom: 8px;
 }
 
 #banner {
@@ -327,7 +368,7 @@ footer {
   }
 
 @media (max-width: 415px) {
-    .menu {
+    .menu, nav {
         position: fixed;
         margin: 0;
         left: 0;
