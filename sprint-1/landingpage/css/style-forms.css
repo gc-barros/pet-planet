@@ -345,6 +345,11 @@ footer {
   height: 40px;
 }
 
+a.login-button {
+  text-decoration: none;
+  color: rgb(243, 243, 243);
+}
+
 @media (max-width: 1050px) {
   .container {
     flex-direction: row;
