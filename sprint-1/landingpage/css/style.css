@@ -220,12 +220,12 @@ nav a:hover, nav .active {
   width: 100%;
   max-height: 580px;
   overflow: hidden; 
-  background-color: #F55B02;
+  background-color: #c54800;
 }
 
 .wrap > .bg-video > video {
   width: 100%;
-  opacity: 0.45;
+  opacity: 0.3;
 }
 
 .text {
