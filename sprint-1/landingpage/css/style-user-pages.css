@@ -543,6 +543,7 @@ main h1 > a:hover {
   height: 520px;
   padding: 24px;
   position: relative;
+  margin-left: 5px;
 }
 
 .month {
