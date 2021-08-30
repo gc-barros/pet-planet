@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style-user-pages.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="js/menu-lateral.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Pet Planet | Bem-vindo</title>
 </head>
 <body>
@@ -240,8 +240,27 @@
 
         <section class="agenda">
             <h1><a href="#">Agenda</a></h1>
-            <div class="card calendar">
-                
+            <div class="card calendar-container">
+                <div class="calendar">
+                    <div class="month">
+                      <i class="fas fa-angle-left prev"></i>
+                      <div class="date">
+                        <h1></h1>
+                      </div>
+                      <i class="fas fa-angle-right next"></i>
+                    </div>
+                    <p id="today-desc"></p>
+                    <div class="weekdays">
+                      <div>Dom</div>
+                      <div>Seg</div>
+                      <div>Ter</div>
+                      <div>Qua</div>
+                      <div>Qui</div>
+                      <div>Sex</div>
+                      <div>Sáb</div>
+                    </div>
+                    <div class="days"></div>
+                  </div>
             </div>
         </section>
 
@@ -250,6 +269,9 @@
     <footer>
         © Copyright 2021. Todos os direitos reservados.
     </footer>
+
+    <script src="js/calendar.js"></script>
+    <script src="js/menu-lateral.js"></script>
 
 </body>
 </html>

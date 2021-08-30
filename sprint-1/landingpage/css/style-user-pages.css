@@ -513,9 +513,93 @@ main h1 > a:hover {
     text-decoration: underline;
 }
 
-.card.calendar {
+/* Calendar Style */
+
+.card.calendar-container {
     height: 520px;
+    padding: 24px;
+  }
+  
+  .calendar {
+    
+  }
+  
+  .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .month i {
+    font-size: 16px;
+    cursor: pointer;
+    color: #f06d22;
+  }
+  
+  .month h1 {
+    font-size: 18px;
+  }
+  
+  #today-desc {
+    font-size: 14px;
+    margin: 16px;
+    margin-top: 24px;
+    text-align: center;
+    opacity: 0.7;
+  }
+  
+  .weekdays {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+  }
+  
+  .weekdays div {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    width: calc(282px / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgb(218, 149, 0);
 }
+  
+  .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .days div {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    width: calc(282px / 7);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: background-color 0.2s;
+  }
+  
+  .days div:hover:not(.today) {
+    background-color: #fde4c7;
+    cursor: pointer;
+  }
+  
+  .prev-date,
+  .next-date {
+    opacity: 0.5;
+  }
+  
+  .days .today {
+    color: #f7f7f7;
+    
+    background-color: #f0b922;
+  }
 
 footer {
     margin-top: 50px;
