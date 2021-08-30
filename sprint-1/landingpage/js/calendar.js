@@ -6,8 +6,6 @@ const renderCalendar = () => {
 
   const monthDays = document.querySelector(".days");
 
-  let lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
-
   const prevLastDay = new Date(
     date.getFullYear(),
     date.getMonth(),
@@ -22,7 +20,7 @@ const renderCalendar = () => {
     0
   ).getDay();
 
-  const nextDays = 7 - lastDayIndex - 1;
+  let nextDays = 7 - lastDayIndex - 1;
 
   const months = [
     "Janeiro",
@@ -51,7 +49,26 @@ const renderCalendar = () => {
   };
 
   let year = date.getFullYear();
-  let days_of_month = [31, getFebDays(year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  let days_of_month = [
+    31,
+    getFebDays(year),
+    31,
+    30,
+    31,
+    30,
+    31,
+    31,
+    30,
+    31,
+    30,
+    31,
+  ];
+
+  let month = date.getMonth();
+
+  if (firstDayIndex < 5 || (firstDayIndex == 5 && days_of_month[month] == 30)) {
+    nextDays += 7;
+  }
 
   document.querySelector(".date h1").innerHTML = `${
     months[date.getMonth()]
@@ -65,8 +82,6 @@ const renderCalendar = () => {
   for (let x = firstDayIndex; x > 0; x--) {
     days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
   }
-
-  let month = date.getMonth();
 
   for (let i = 1; i <= days_of_month[month]; i++) {
     if (
@@ -82,17 +97,23 @@ const renderCalendar = () => {
   }
 
   for (let j = 1; j <= nextDays; j++) {
+    /*
+    if (firstDayIndex < 5) {
+      nextDays += 7
+    }
+    */
     days += `<div class="next-date">${j}</div>`;
     monthDays.innerHTML = days;
   }
 
-  if (date.getMonth() != hoje.getMonth() || 
-    date.getFullYear() != hoje.getFullYear()) {
-        document.querySelector('#today-desc').style.textDecoration = 'underline';
-} else {
-    document.querySelector('#today-desc').style.textDecoration = 'none';
-}
-
+  if (
+    date.getMonth() != hoje.getMonth() ||
+    date.getFullYear() != hoje.getFullYear()
+  ) {
+    document.querySelector("#today-desc").style.textDecoration = "underline";
+  } else {
+    document.querySelector("#today-desc").style.textDecoration = "none";
+  }
 };
 
 document.querySelector(".prev").addEventListener("click", () => {
