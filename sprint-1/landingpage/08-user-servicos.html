@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style-user-pages.css">
+    <link rel="stylesheet" href="css/style-user-servicos.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -111,7 +111,43 @@
     </div>
 
     <main>
+        <div class="carousel">
+            <div data-js="carousel__item" class="carousel__item carousel__item--visible">
+              <img src="images/pet-appointment.jpg" />
+            </div>
 
+            <div data-js="carousel__item" class="carousel__item">
+                <img src="images/pet-bath.jpg" />
+            </div>
+            
+            <div data-js="carousel__item" class="carousel__item">
+              <img src="images/pet-care.jpg" />
+            </div>
+        
+            <div data-js="carousel__item" class="carousel__item">
+              <img src="images/pet-trainer.jpg" />
+            </div>
+
+            <div data-js="carousel__item" class="carousel__item">
+                <img src="images/pet-transporter.jpg" />
+            </div>
+
+            <div data-js="carousel__item" class="carousel__item">
+                <img src="images/pet-walker.jpg" />
+            </div>
+
+            
+        
+            <div class="carousel__actions">
+              <button data-js="carousel__button--prev" aria-label="Slide anterior">
+                <
+              </button>
+        
+              <button data-js="carousel__button--next" aria-label="Próximo slide">
+                >
+              </button>
+            </div>
+          </div>
     </main>
 
     <footer>
@@ -119,6 +155,7 @@
     </footer>
 
     <script src="js/menu-lateral.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
