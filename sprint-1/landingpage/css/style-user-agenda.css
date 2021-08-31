@@ -230,146 +230,279 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-bottom: 8px;
 }
 
-main {
+#banner {
+  background-image: url("../images/dog-banner.png");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+}
+
+.banner-text {
+  max-width: 450px;
+  max-height: 275px;
+  padding: 20px;
+  margin: 30px;
+  color: #f8f8f8;
+  background-color: #af69004d;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.banner-text h1 {
+  font-size: 32px;
+  text-shadow: #5a5a5a21 0px 3px 2px;
+}
+
+.banner-text h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px;
+  text-shadow: #5a5a5a21 0px 3px 2px;
+}
+
+.upgrade-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #303030;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: #5a5a5a09 0px 3px 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.upgrade-button:hover {
+  width: 180px;
+  background-color: #f5f5f5;
+}
+
+main {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
 }
 
-.servicos-disponiveis {
-  margin-top: 40px;
+.artigos,
+.produtos,
+.agenda,
+.servicos-agendados {
+  margin: 20px;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 350px;
+  padding: 0 10px;
 }
-.servicos-disponiveis h1 > a {
+
+main h1 > a {
   text-decoration: none;
   color: #505050;
   transition: all 0.5s ease-out;
-  font-size: 24px;
-  font-weight: 500;
-  margin-left: 45px;
 }
 
-.servicos-disponiveis h1 > a::after {
+main h1 > a:hover {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+
+.artigos > h1,
+.servicos-agendados > h1,
+.agenda > h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.artigos > h1::after,
+.servicos-agendados > h1::after,
+.agenda > h1::after {
   content: "";
   display: block;
   margin-top: 5px;
   background-color: #f06d22;
   height: 5px;
-  width: 120px;
-  margin-left: 45px;
+  width: 50px;
+  margin-bottom: 20px;
   transition: all 1s ease-out;
 }
 
-.servicos-disponiveis h1 > a:hover::after {
-  width: 170px;
+.artigos h1:hover::after,
+.servicos-agendados h1:hover::after,
+.agenda h1:hover::after {
+  width: 100px;
 }
 
-.card-carousel {
-  margin: 24px 8px;
-  max-width: 450px;
-  max-height: 800px;
-  display: flex;
-}
-
-.carousel {
-  overflow: hidden;
-  position: relative;
-  margin: 0 8px;
-}
-
-.carousel .carousel__item,
-.carousel .carousel__item--hidden {
-  padding-top: 5px;
-  display: none;
-}
-
-.carousel .carousel__item img {
+.card {
   width: 100%;
-  border-radius: 8px 8px 0 0;
-  box-shadow: 
-    0px 1px 5px rgba(0, 0, 0, 0.1), 
-    0px 3px 4px rgba(0, 0, 0, 0),
-    0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.carousel .carousel__item--visible {
-  display: block;
-  animation: fadeVisibility 0.5s;
-}
-
-.carousel > h1 {
-    position: absolute;
-    letter-spacing: 1px;
-    bottom: 12px;
-    font-size: 20px;
-    font-weight: 500;
-    width: 100%;
-    text-align: center;
-    color: #f1f1f1;
-    text-shadow: #1b1b1b3d 1px 1px 1px;
-}
-
-.carousel__actions {
+  height: 100px;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 3px 4px rgba(0, 0, 0, 0),
+    0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.see-more {
+  width: 100%;
+  text-align: right;
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.see-more > a {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+
+.see-more > a:hover {
+  color: #7b7b7b;
+  text-decoration: underline;
+}
+
+/* Calendar Style */
+
+.card.calendar-container {
+  height: 520px;
+  padding: 24px;
+  position: relative;
+  margin-left: 5px;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
-.carousel__actions button {
-  border-radius: 50px;
-  border: 0;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 30px;
+.month i {
+  font-size: 16px;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
-  color: #F06D22;
-  background-color: #f06e223a;
-  box-shadow: 
-    0px 1px 5px rgba(0, 0, 0, 0.1), 
-    0px 3px 4px rgba(0, 0, 0, 0),
-    0px 2px 4px rgba(0, 0, 0, 0.1);
+  color: #f06d22;
+  transition: all 0.5s ease;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
 }
 
-@keyframes fadeVisibility {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: opacity linear;
-  }
+.month i:active {
+  background-color: #ff8800b3;
 }
-.descricao-servico {
-  max-width: 374px;
-  max-height: 800px;
-  align-items: center;
-  padding: 16px;
-  background-color: #f7f7f7;
-  box-shadow: 0px 1px 5px rgb(0 0 0 / 10%), 0px 3px 4px rgb(0 0 0 / 0%), 0px 2px 4px rgb(0 0 0 / 10%);
-  border-radius: 0 0 8px 8px;
-  margin: -28px 46px 24px 46px;
+
+.month h1 {
+  font-size: 18px;
+}
+
+#today-desc {
   font-size: 14px;
-  opacity: 0.6;
+  margin: auto;
+  padding: 5px;
+  border-radius: 50px;
+  margin-top: 16px;
+  text-align: center;
+  opacity: 0.7;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  transition: all 0.5s ease;
 }
 
-.agendar-servico {
-  margin-top: 105px;
-  margin-left: 50px;
-  margin-right: 30px;
-  width: 375px;
+#today-desc:hover {
+  background-color: #fde4c771;
 }
 
-.agendar-servico > form {
-  height: 345px;
-  padding: 16px;
-  background-color: #f7f7f7;
-  box-shadow: 
-    0px 1px 5px rgba(0, 0, 0, 0.1), 
-    0px 3px 4px rgba(0, 0, 0, 0),
-    0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+.weekdays {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.weekdays div {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  width: calc(282px / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: rgb(218, 149, 0);
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.days div {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  width: calc(282px / 7);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #fde4c7;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.days .today {
+  color: #f7f7f7;
+  background-color: #f0b922;
+}
+
+.agendamentos {
+  position: absolute;
+  bottom: 24px;
+  display: flex;
+}
+
+.agendamentos i {
+  line-height: 26px;
+  color: #f06d22;
+}
+
+.agendamentos a {
+  color: #222222;
+  font-size: 14px;
+  margin: auto;
+  padding: 5px;
+  border-radius: 50px;
+  text-align: left;
+  opacity: 0.5;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.seus-agendamentos {
+  width: 340px;
+  height: 520px;
 }
 
 footer {
@@ -383,21 +516,6 @@ footer {
   height: 40px;
 }
 
-@media (max-width: 938px) {
-  .agendar-servico {
-    margin-top: 45px;
-    margin-right: 45px;
-  }
-}
-
-@media (max-width: 630px) {
-  .carousel > h1 {
-    bottom: 16px;
-    font-size: 18px;
-    font-weight: 500;
-  }
-}
-
 @media (max-width: 415px) {
   .menu,
   nav {
@@ -407,12 +525,6 @@ footer {
     bottom: 0;
     width: 100vw;
     background-color: #eeeeee;
-  }
-
-  .carousel > h1 {
-    bottom: 9px;
-    font-size: 14px;
-    font-weight: 500;
   }
 
   footer {

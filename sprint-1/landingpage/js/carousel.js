@@ -5,12 +5,19 @@ const prevButton = document.querySelector('[data-js="carousel__button--prev"]');
 const lastSlideIndex = slides.length - 1;
 let currentSlideIndex = 0;
 
+const servicos = ['Acompanhamento veterinário', 'Banho completo', 'Tosa e corte de unhas', 'Adestramento especializado', 'Transporte de pets', 'Passeador de cães'];
+
+const renderServico = correctSlideIndex => {
+  document.querySelector('.carousel > h1').innerHTML = servicos[correctSlideIndex];
+}
+
 const manipulateSlidesClasses = correctSlideIndex => {
   slides.forEach(slide => {
     slide.classList.remove('carousel__item--visible');
   });
 
   slides[currentSlideIndex].classList.add('carousel__item--visible');
+  renderServico(currentSlideIndex);
 }
 
 nextButton.addEventListener('click', () => {
