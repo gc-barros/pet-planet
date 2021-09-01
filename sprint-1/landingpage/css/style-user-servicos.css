@@ -324,8 +324,8 @@ main {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  color: #F06D22;
-  background-color: #f06e223a;
+  color: #291a11;
+  background-color: #f0f0f0;
   box-shadow: 
     0px 1px 5px rgba(0, 0, 0, 0.1), 
     0px 3px 4px rgba(0, 0, 0, 0),
@@ -362,6 +362,10 @@ main {
 }
 
 .agendar-servico > form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
   height: 345px;
   padding: 16px;
   background-color: #f7f7f7;
@@ -370,6 +374,79 @@ main {
     0px 3px 4px rgba(0, 0, 0, 0),
     0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  margin: 0 16px;
+}
+
+.agendar-servico > form label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #252525;
+}
+
+.agendar-servico > form > input, select, .data-hora {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.agendar-servico > form > input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+.agendar-servico > form > input, select, textarea {
+  padding-left: 8px;
+}
+
+.agendar-servico > form > input, form > select {
+  height: 28px;
+  font-size: 14px;
+  border: none;
+  border-bottom: #F2BF60 2px solid;
+}
+
+.agendar-servico > form > .data-hora {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-hora > label[for=data],
+.data-hora > label[for=horario] {
+  margin-right: 5px;
+}
+
+.data-hora > label[for=horario] {
+  margin-left: 18px;
+}
+
+.data-hora > input {
+  border: none;
+  border-bottom: #F2BF60 2px solid;
+}
+
+.agendar-servico > form > textarea {
+  font-size: 14px;
+  resize: none;
+  width: 100%;
+  height: 24px;
+  border: none;
+  border-bottom: #F2BF60 2px solid;
+}
+
+.agendar-servico > form > button {
+  align-self: center;
+  font-size: 14px;
+  margin-top: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: #25252563 1px 1px 1px;
+  background-color: #f0b922;
+  border: none;
+}
+
+.agendar-servico > form > button:hover {
+  background-color: #ecc24e;
 }
 
 footer {
@@ -395,6 +472,10 @@ footer {
     bottom: 16px;
     font-size: 18px;
     font-weight: 500;
+  }
+
+  .servicos-disponiveis h1 > a {
+    font-size: 20px;
   }
 }
 

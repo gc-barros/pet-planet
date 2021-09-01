@@ -113,7 +113,7 @@
     <main>
 
         <section class="servicos-disponiveis">
-            <h1><a href="#">Agende agora mesmo o seu serviço!</a></h1>
+            <h1><a href="#">Agende já os seus serviços!</a></h1>
             <div class="card-carousel">
                 <div class="carousel__actions">
                     <button data-js="carousel__button--prev" aria-label="Slide anterior">
@@ -159,7 +159,39 @@
         
         <section class="agendar-servico">
             <form action="">
-                Formulário
+                <label for="pet-name"><i class="ri-bear-smile-line"></i> 
+                    Nome do seu pet:</label>
+                <input type="text" name="pet-name" id="pet-name" placeholder="Digite o nome do seu bichinho" required>
+
+                <label for="servico"><i class="ri-stethoscope-line"></i> 
+                    Serviço:</label>
+                <select name="servico" id="servico">
+                    <option value="">Acompanhamento veterinário</option>
+                    <option value="">Banho completo</option>
+                    <option value="">Tosa e corte de unhas</option>
+                    <option value="">Adestramento especializado</option>
+                    <option value="">Transporte de pets</option>
+                    <option value="">Passeador de cães</option>
+                </select>
+
+                <div class="data-hora">
+        
+                    <label for="data">Data:</label> 
+                    <input type="date" name="data" id="data">
+                
+                    <label for="horario">Horário:</label>
+                    <input type="time" name="" id="">
+
+                </div>
+
+                </div>
+                
+                <label for="more-infos"><i class="ri-chat-new-line"></i> 
+                    Comentário:</label>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Alguma informação adicional?"></textarea>
+
+                <button><i class="ri-calendar-check-fill ri-lg sty"></i> 
+                    Agendar</button>
             </form>
         </section>
 
