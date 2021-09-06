@@ -11,12 +11,22 @@ const renderServico = correctSlideIndex => {
   document.querySelector('.carousel > h1').innerHTML = servicos[correctSlideIndex];
 }
 
+// Sincronizar imagem com option escolhida no select
+
+const comboServicos = document.getElementById("servico");
+
+comboServicos.addEventListener('change', () => {
+  currentSlideIndex = comboServicos.selectedIndex;
+  manipulateSlidesClasses(currentSlideIndex);
+});
+
 const manipulateSlidesClasses = correctSlideIndex => {
   slides.forEach(slide => {
     slide.classList.remove('carousel__item--visible');
   });
 
   slides[currentSlideIndex].classList.add('carousel__item--visible');
+  comboServicos.selectedIndex = currentSlideIndex;
   renderServico(currentSlideIndex);
 }
 
