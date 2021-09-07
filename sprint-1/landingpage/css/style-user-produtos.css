@@ -230,15 +230,6 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-bottom: 8px;
 }
 
-#banner {
-  background-image: url("../images/dog-banner.png");
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  display: flex;
-  align-items: center;
-}
-
 #banner2 {
   background-image: url("../images/wpgato.png");
   background-position: center;
@@ -246,6 +237,8 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 300px;
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
+  opacity: 0.85;
 }
 
 .banner-text {
@@ -291,23 +284,25 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 main {
+  margin: auto;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .artigos,
 .produtos,
 .agenda {
-  margin: 20px 0;
+  margin: auto;
   display: flex;
   flex-flow: nowrap column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 350px;
-  padding: 0 20px;
+}
+
+.produtos .container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 main h1 > a {
@@ -474,6 +469,7 @@ main h1 > a:hover {
   height: 160px;
   padding: 16px;
   padding-bottom: 10px;
+  margin-right: 24px;
 }
 
 .card.small-card-2 .conteudo {
@@ -536,9 +532,10 @@ main h1 > a:hover {
 .see-more {
   width: 100%;
   text-align: right;
-  padding-right: 5px;
+  padding-right: 24px;
   font-size: 14px;
   font-weight: 500;
+  margin-bottom: 32px;
 }
 
 .see-more > a {
@@ -551,135 +548,6 @@ main h1 > a:hover {
   text-decoration: underline;
 }
 
-/* Calendar Style */
-
-.card.calendar-container {
-  height: 520px;
-  padding: 24px;
-  position: relative;
-  margin-left: 5px;
-}
-
-.month {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-
-.month i {
-  font-size: 16px;
-  cursor: pointer;
-  color: #f06d22;
-  transition: all 0.5s ease;
-  width: 24px;
-  height: 24px;
-  text-align: center;
-  line-height: 24px;
-  border-radius: 50%;
-}
-
-.month i:active {
-  background-color: #ff8800b3;
-}
-
-.month h1 {
-  font-size: 18px;
-}
-
-#today-desc {
-  font-size: 14px;
-  margin: auto;
-  padding: 5px;
-  border-radius: 50px;
-  margin-top: 16px;
-  text-align: center;
-  opacity: 0.7;
-  cursor: pointer;
-  text-decoration: none;
-  width: 100%;
-  transition: all 0.5s ease;
-}
-
-#today-desc:hover {
-  background-color: #fde4c771;
-}
-
-.weekdays {
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.weekdays div {
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  width: calc(282px / 7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  color: rgb(218, 149, 0);
-}
-
-.days {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.days div {
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  margin-top: 10px;
-  width: calc(282px / 7);
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  transition: background-color 0.2s;
-}
-
-.days div:hover:not(.today) {
-  background-color: #fde4c7;
-  cursor: pointer;
-}
-
-.prev-date,
-.next-date {
-  opacity: 0.5;
-}
-
-.days .today {
-  color: #f7f7f7;
-  background-color: #f0b922;
-}
-
-.agendamentos {
-  position: absolute;
-  bottom: 24px;
-  display: flex;
-}
-
-.agendamentos i {
-  line-height: 26px;
-  color: #f06d22;
-}
-
-.agendamentos a {
-  color: #222222;
-  font-size: 14px;
-  margin: auto;
-  padding: 5px;
-  border-radius: 50px;
-  text-align: left;
-  opacity: 0.5;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-
 footer {
   margin-top: 50px;
   width: 100%;
@@ -689,6 +557,33 @@ footer {
   padding-top: 10px;
   background-color: #1b1b1b;
   height: 40px;
+}
+
+@media (max-width: 1060px) {
+  main {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  
+  .artigos,
+  .produtos,
+  .agenda {
+    margin: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    flex-flow: nowrap column;
+  }
+  
+  .produtos .container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+  }
 }
 
 @media (max-width: 415px) {
