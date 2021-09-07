@@ -503,6 +503,71 @@ main h1 > a:hover {
 .seus-agendamentos {
   width: 340px;
   height: 520px;
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+.card.compromisso {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.card.compromisso.passado {
+  opacity: 0.3;
+}
+
+.card.compromisso.invisible {
+  display: none;
+}
+
+.card.compromisso .pet-picture {
+  width: 75px;
+  height: 75px;
+}
+
+.card.compromisso .pet-picture > img {
+  width: 100%;
+}
+
+.card.compromisso .card-options {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+.card.compromisso .card-options > i {
+  margin-right: 5px;
+  font-size: 14px;
+  color: #949494;
+  cursor: pointer;
+}
+
+.card.compromisso .text-compromisso {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 200px;
+  padding: 8px;
+  padding-top: 4px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+#comp-horario {
+  margin-left: 4px;
+}
+
+.card.compromisso .text-compromisso p {
+  margin-top: 4px;
+  font-weight: 500;
+  color: #616161;
+  display: inline-block;
+}
+
+.card.compromisso .text-compromisso strong {
+  color:#F06D22;
 }
 
 footer {
