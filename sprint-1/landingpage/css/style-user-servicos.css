@@ -425,6 +425,10 @@ main {
   background: none;
 }
 
+#data {
+  width: 125px;
+}
+
 .agendar-servico > form > textarea {
   font-size: 14px;
   resize: none;

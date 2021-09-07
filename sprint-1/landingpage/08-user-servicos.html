@@ -158,7 +158,7 @@
         </section>
         
         <section class="agendar-servico">
-            <form action="">
+            <form action="" method="POST">
                 <label for="pet-name"><i class="ri-bear-smile-line"></i> 
                     Nome do seu pet:</label>
                 <input type="text" name="pet-name" id="pet-name" placeholder="Digite o nome do seu bichinho" required>
@@ -177,10 +177,10 @@
                 <div class="data-hora">
         
                     <label for="data">Data:</label> 
-                    <input type="date" name="data" id="data">
+                    <input type="date" name="data" id="data" required>
                 
                     <label for="horario">Horário:</label>
-                    <input type="time" name="" id="">
+                    <input type="time" name="horario" id="horario" required>
 
                 </div>
 
@@ -190,7 +190,7 @@
                     Comentário:</label>
                 <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Alguma informação adicional?"></textarea>
 
-                <button><i class="ri-calendar-check-fill ri-lg sty"></i> 
+                <button type="submit" value="Submit"><i class="ri-calendar-check-fill ri-lg sty"></i> 
                     Agendar</button>
             </form>
         </section>
