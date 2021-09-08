@@ -1,3 +1,5 @@
+
+
 CREATE TABLE users (  
 id int unsigned NOT NULL AUTO_INCREMENT,     
 nome varchar(75) NOT NULL,     
