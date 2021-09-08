@@ -12,4 +12,4 @@ SHOW indexes from users;
 
 drop table users;
 
-show columns from users;
+SHOW columns from users;
