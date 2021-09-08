@@ -2,8 +2,8 @@
 
 define('DBSERVER', 'localhost'); // Data server
 define('DBUSERNAME', 'root'); // Database username
-define('DBPASSWORD', ''); // Database password
-define('DBNAME', 'testeBD'); // Database name
+define('DBPASSWORD', 'Thiago270602'); // Database password
+define('DBNAME', 'World'); // Database name
 
 /*connect to MySQL database */
 $db = mysqli_connect(DBSERVER, DBUSERNAME, DBPASSWORD, DBNAME);
