@@ -392,6 +392,7 @@ a.login-button {
     background-color: #fff;
     height: 230px;
     box-shadow: #1b1b1b94 0 1px;
+    z-index: 1;
   }
   
   .menu {
