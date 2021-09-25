@@ -9,6 +9,7 @@ ___
 ### 📜 Sobre o projeto:
 * A Pet Planet trata-se de uma clínica veterinária fictícia que possui serviços de pet shops integrados.
 * Na disciplina de Projeto e Desenvolvimento de Software do meu curso, o objetivo era desenvolver uma aplicação web responsiva que facilitasse o agendamento de serviços e a compra de produtos por parte dos clientes do estabelecimento.
+* Tecnologias utilizadas: HTML5, CSS3, JavaScript, PHP e MySQL.
 * Atualmente o sistema se encontra com o back-end inacabado. ⚠
 
 ___
