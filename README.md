@@ -1,5 +1,5 @@
 # 🐶 Pet Planet 
-### :cyclone: Sistema para gestão de petshop desenvolvido durante a disciplina de Projeto e Desenvolvimento de Software (BICT-UFMA). 
+### 🐾 Sistema para gestão de petshop desenvolvido durante a disciplina de Projeto e Desenvolvimento de Software (BICT-UFMA). 
 
 #### 🔗 Link do projeto: https://petplanet.netlify.app/ 
 *Você pode clicar diretamente no botão de "entrar" na página de login para ter acesso ao sistema, ou se preferir, acesse o link abaixo:*
