@@ -239,6 +239,8 @@ nav a:hover, nav .active {
   color: var(--white);
   text-shadow: #1b1b1b9c 1px 1px;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .text.home {

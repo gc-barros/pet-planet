@@ -234,6 +234,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-height: calc(100vh - (90px + 144px));
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    min-height: none;
+  }
 }
 
 .servicos-disponiveis {
