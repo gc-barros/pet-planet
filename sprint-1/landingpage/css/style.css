@@ -379,6 +379,7 @@ footer {
   padding-top: 10px;
   background-color: #1B1B1B;
   height: 40px;
+  z-index: 10;
 }
 
 @media (max-width: 1050px) {
